@@ -1,5 +1,14 @@
 ![gif](./docs/first-version.gif)
 
+```bash
+npm run dev
+```
+
+Then navigate to
+[svelte-slideshow](http://localhost:5000/#/slides/1)
+
+## original readme content below.
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
