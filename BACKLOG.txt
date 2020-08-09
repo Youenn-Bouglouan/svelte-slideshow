@@ -1,0 +1,4 @@
+- change route in URL based on current slide! For instance based on index
+
+- rework minislide preview with scaling
+
