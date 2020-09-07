@@ -1,11 +1,12 @@
+Run `npm run dev` from the main folder and navigate to [svelte-slideshow](http://localhost:5000/#/slides/1)
+
+### First version, blank slides
+
 ![gif](./docs/first-version.gif)
 
-```bash
-npm run dev
-```
+### First slide, true reactivity
 
-Then navigate to
-[svelte-slideshow](http://localhost:5000/#/slides/1)
+![gif](./docs/svelte-true-reactivity-slide.gif)
 
 ## original readme content below.
 
