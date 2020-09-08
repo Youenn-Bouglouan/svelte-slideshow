@@ -2,8 +2,9 @@
   logMountAndDestroy('Slide 1')
 
   import { logMountAndDestroy } from '../utils.js'
-  import SlideContainer from './SlideContainer.svelte'
-  import CodeSnippet from './CodeSnippet.svelte'
+  import SlideContainer from '../SlideContainer.svelte'
+  import CodeSnippet from '../CodeSnippet.svelte'
+  import Greet from '../sample-components/Greet.svelte'
 
   let codeSnippet1 = `<script>
   let a = 0;
@@ -38,9 +39,7 @@
 
   <div>
     <CodeSnippet code={codeSnippet2} />
-    <input type="text" bind:value={name} />
-    <br />
-    {hello}
+    <Greet />
   </div>
 </SlideContainer>
 

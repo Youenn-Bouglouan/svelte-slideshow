@@ -1,6 +1,6 @@
 <script>
   import { fly, fade } from 'svelte/transition'
-  import { slideTransition } from '../navigationStores'
+  import { slideTransition } from './navigationStores'
 
   const defaultFlyInX = 1000
   const defaultFlyInY = 0

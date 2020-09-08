@@ -1,9 +1,11 @@
 <script>
   import { HighlightSvelte } from 'svelte-highlight'
-  import { javascript } from 'svelte-highlight/languages'
+  import { javascript, css } from 'svelte-highlight/languages'
   import { androidstudio } from 'svelte-highlight/styles'
 
   export let code
+  export let lang = 'js'
+  $: language = lang === 'js' ? javascript : css
 </script>
 
 <svelte:head>
@@ -11,7 +13,7 @@
 </svelte:head>
 
 <div class="codeSnippet">
-  <HighlightSvelte language={javascript} {code} />
+  <HighlightSvelte {language} {code} />
 </div>
 
 <style>

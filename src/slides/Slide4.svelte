@@ -1,5 +1,5 @@
 <script>
-  import SlideContainer from './SlideContainer.svelte'
+  import SlideContainer from '../SlideContainer.svelte'
 </script>
 
 <SlideContainer>
@@ -7,7 +7,7 @@
 </SlideContainer>
 
 <style>
-  h1 {
+  /* h1 {
     background-color: green;
-  }
+  } */
 </style>

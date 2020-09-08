@@ -1,5 +1,10 @@
 Run `npm run dev` from the main folder and navigate to [svelte-slideshow](http://localhost:5000/#/slides/1)
 
+# TODO
+
+- Slide about the `slot` (example with SlideContainer)
+- Slide about extracting lifecycle events to helpers
+
 ### First version, blank slides
 
 ![gif](./docs/first-version.gif)
