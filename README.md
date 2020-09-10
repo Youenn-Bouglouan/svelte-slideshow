@@ -13,6 +13,10 @@ Run `npm run dev` from the main folder and navigate to [svelte-slideshow](http:/
 
 ![gif](./docs/svelte-true-reactivity-slide.gif)
 
+### Version 2
+
+![gif](./docs/version-2-slot-component.gif)
+
 ## original readme content below.
 
 # svelte app
