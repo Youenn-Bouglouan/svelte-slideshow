@@ -1,5 +1,5 @@
 <script>
-  logMountAndDestroy('Slide 3')
+  logMountAndDestroy('ComponentUsage.svelte')
 
   import { logMountAndDestroy } from '../utils.js'
   import SlideContainer from '../SlideContainer.svelte'
@@ -33,7 +33,10 @@
 <style>
   h1 {
     display: flex;
-    color: darkorange;
+    color: fuchsia;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-stretch: expanded;
   }
 </style>

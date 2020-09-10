@@ -1,12 +1,12 @@
 <script>
-  logMountAndDestroy('Slide 2')
+  logMountAndDestroy('HelloComponentExample.svelte')
 
-  import { logMountAndDestroy } from '../utils.js'
+  import { logMountAndDestroy, highlightText } from '../utils.js'
   import SlideContainer from '../SlideContainer.svelte'
   import CodeSnippet from '../CodeSnippet.svelte'
   import Greet from '../sample-components/Greet.svelte'
 
-  const title = `Full&nbsp;<em>Hello!</em>&nbsp;component`
+  const title = `Full&nbsp;${highlightText('Hello!')}&nbsp;component`
 
   let codeSnippet1 = `// Greet.svelte file
 <script>
@@ -31,7 +31,8 @@
 <style>
   h1 {
     display: flex;
-    color: darkorange;
+    color: blue;
     justify-content: center;
+    font-family: Erica One;
   }
 </style>

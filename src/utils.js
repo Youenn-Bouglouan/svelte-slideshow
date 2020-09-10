@@ -13,3 +13,7 @@ export function logMountAndDestroy(componentName) {
 export function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max)
 }
+
+export function highlightText(text) {
+  return `<em style="color: grey">${text}</em>`
+}
