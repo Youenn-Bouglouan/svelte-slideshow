@@ -21,16 +21,28 @@
 </script>
 
 <SlideContainer>
-  <h1>
-    {@html title}
-  </h1>
-  <h3>Declaration</h3>
-  <CodeSnippet code={codeSnippet1} />
-  <h3>Usage</h3>
-  <CodeSnippet code={codeSnippet2} />
+  <div class="parent">
+    <h1>
+      {@html title}
+    </h1>
+    <h3>Declaration</h3>
+    <CodeSnippet code={codeSnippet1} />
+    <h3>Usage</h3>
+    <CodeSnippet code={codeSnippet2} />
+  </div>
 </SlideContainer>
 
 <style>
+  .parent {
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   h1 {
     display: flex;
     color: blueviolet;

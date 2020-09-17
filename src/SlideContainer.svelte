@@ -22,19 +22,19 @@
 </script>
 
 <div
-  class="slide"
+  class="container"
   in:fly={{ x: flyX, y: flyY, delay: duration, duration: duration }}
   out:fly={{ duration: duration }}>
   <slot>Slide Container</slot>
 </div>
 
 <style>
-  .slide {
+  .container {
     margin: 5px;
     flex: 1 0 auto;
-    align-self: stretch;
-    text-align: center;
-    background-color: white;
+    background-color: lightyellow;
     padding: 2px;
+    display: flex;
+    overflow-y: hidden;
   }
 </style>

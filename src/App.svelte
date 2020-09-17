@@ -26,19 +26,17 @@
   .main {
     display: flex;
     flex-flow: column;
-
-    /* background: grey; */
     height: 100%;
   }
 
   .slide {
+    display: flex;
     flex: 1 0 auto;
   }
 
   .navigation {
     display: flex;
     flex-flow: row;
-
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 10px;

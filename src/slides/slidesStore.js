@@ -6,12 +6,21 @@ import ComponentUsage from './ComponentUsage.svelte'
 import EmptySlide from './EmptySlide.svelte'
 import ComponentSlot from './ComponentSlot.svelte'
 import ButWhy from './ButWhy.svelte'
+import Title from './Title.svelte'
 
-export const slides = readable([
-  { index: 1, description: 'Slide 1', slide: TrueReactivity },
-  { index: 2, description: 'Slide 2', slide: HelloComponentExample },
-  { index: 3, description: 'Slide 3', slide: ComponentUsage },
-  { index: 4, description: 'Slide 4', slide: ComponentSlot },
-  { index: 5, description: 'Slide 5', slide: EmptySlide },
-  { index: 6, description: 'Slide 6', slide: ButWhy },
-])
+const slidesArray = [
+  { description: 'Title', slide: Title },
+  { description: 'True Reactivity', slide: TrueReactivity },
+  { description: 'Hello Component Example', slide: HelloComponentExample },
+  { description: 'Component Usage', slide: ComponentUsage },
+  { description: 'Composition Via Slots', slide: ComponentSlot },
+  { description: 'Empty Slide', slide: EmptySlide },
+  { description: 'But Why?', slide: ButWhy },
+]
+
+export const slides = readable(
+  slidesArray.map((elem, index) => ({
+    ...elem,
+    index: index + 1,
+  }))
+)

@@ -3,8 +3,10 @@
   $: hello = name ? `Hello, ${name}!` : 'Hello!'
 </script>
 
-<input class="inline" type="text" bind:value={name} />
-<h3 class="inline">{hello}</h3>
+<div>
+  <input class="inline" type="text" bind:value={name} />
+  <h3 class="inline">{hello}</h3>
+</div>
 
 <style>
   .inline {

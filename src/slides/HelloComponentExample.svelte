@@ -19,16 +19,28 @@
 </script>
 
 <SlideContainer>
-  <h1>
-    {@html title}
-  </h1>
-  <Greet name={'Unknown'} />
-  <br />
-  <Greet />
-  <CodeSnippet code={codeSnippet1} />
+  <div class="parent">
+    <h1>
+      {@html title}
+    </h1>
+    <Greet name={'Unknown'} />
+    <br />
+    <Greet />
+    <CodeSnippet code={codeSnippet1} />
+  </div>
 </SlideContainer>
 
 <style>
+  .parent {
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   h1 {
     display: flex;
     color: blue;
