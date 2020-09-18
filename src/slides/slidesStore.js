@@ -8,9 +8,13 @@ import ComponentSlot from './ComponentSlot.svelte'
 import ButWhy from './ButWhy.svelte'
 import Title from './Title.svelte'
 import TimeChart from './TimeChart.svelte'
+import SvelteIntro from './SvelteIntro.svelte'
+import PresMadeInSvelte from './PresMadeInSvelte.svelte'
 
 const slidesArray = [
   { description: 'Title', slide: Title },
+  { description: 'Svelte Intro', slide: SvelteIntro },
+  { description: 'Made In Svelte', slide: PresMadeInSvelte },
   { description: 'Time Chart', slide: TimeChart },
   { description: 'True Reactivity', slide: TrueReactivity },
   { description: 'Hello Component Example', slide: HelloComponentExample },

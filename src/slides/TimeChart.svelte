@@ -37,7 +37,6 @@
       <Pie {data} options={{ maintainAspectRatio: false, responsive: true }} />
     </div>
   </div>
-
 </SlideContainer>
 
 <style>
