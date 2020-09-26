@@ -7,8 +7,15 @@
 
 <SlideContainer>
   <div class="parent">
-    <a href="https://svelte.dev/" target="_blank">
+    <a class="center" href="https://svelte.dev/" target="_blank">
       <img src="img/svelte-logo.png" alt="Svelte Logo" />
+    </a>
+
+    <a
+      class="bottom"
+      href="https://www.youtube.com/watch?v=AdNJ3fydeao"
+      target="_blank">
+      <p>Watch this talk from Rich Harris (the creator of Svelte)</p>
     </a>
   </div>
 </SlideContainer>
@@ -18,10 +25,20 @@
     flex: 1 0 auto;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  /* .center {
+    flex: 1 0 auto;
+    align-self: center;
+  }*/
+
+  /* .bottom {
+    flex: 1 0 auto;
+    align-self: flex-end;
+  } */
 </style>
