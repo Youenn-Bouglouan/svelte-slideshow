@@ -1,5 +1,7 @@
 Run `npm run dev` from the main folder and navigate to [svelte-slideshow](http://localhost:5000/#/slides/1)
 
+Go [here](https://youenn-bouglouan.github.io/svelte-slideshow/#/slides/1) to see the slideshow deployed via GitHub pages!
+
 # TODO
 
 - Slide about the `slot` (example with SlideContainer)
