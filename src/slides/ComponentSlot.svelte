@@ -5,10 +5,10 @@
   import SlideContainer from '../SlideContainer.svelte'
   import CodeSnippet from '../CodeSnippet.svelte'
 
-  const title = `Component composition with&nbsp;${highlightText('slots')}`
+  const title = `Easy component composition with&nbsp;${highlightText('slots')}`
 
   let codeSnippet1 = `// SlideContainer.svelte file
-<div class="slide">
+<div class="container">
   <slot>Slide Container</slot>
 </div>`
 

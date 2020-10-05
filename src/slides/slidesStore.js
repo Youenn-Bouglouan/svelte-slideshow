@@ -12,7 +12,9 @@ import SvelteIntro from './SvelteIntro.svelte'
 import PresMadeInSvelte from './PresMadeInSvelte.svelte'
 import BenchmarkBundleSize from './BenchmarkBundleSize.svelte'
 import BenchmarkLOC from './BenchmarkLOC.svelte'
+import BenchmarkSpeed from './BenchmarkSpeed.svelte'
 import WhatSvelteIsToMe from './WhatSvelteIsToMe.svelte'
+import ComponentAnatomy from './ComponentAnatomy.svelte'
 
 const slidesArray = [
   { description: 'Title', slide: Title },
@@ -22,7 +24,9 @@ const slidesArray = [
   { description: 'Time Chart', slide: TimeChart },
   { description: 'Benchmarks - Bundle Size', slide: BenchmarkBundleSize },
   { description: 'Benchmarks - LOC', slide: BenchmarkLOC },
+  { description: 'Benchmarks - Speed', slide: BenchmarkSpeed },
   { description: 'True Reactivity', slide: TrueReactivity },
+  { description: 'Anatomy Of A Component', slide: ComponentAnatomy },
   { description: 'Hello Component Example', slide: HelloComponentExample },
   { description: 'Component Usage', slide: ComponentUsage },
   { description: 'Composition Via Slots', slide: ComponentSlot },

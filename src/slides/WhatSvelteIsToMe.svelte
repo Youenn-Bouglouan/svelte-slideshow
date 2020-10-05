@@ -3,18 +3,25 @@
 
   import { logMountAndDestroy } from '../utils.js'
   import SlideContainer from '../SlideContainer.svelte'
+
+  let items = [
+    { value: 'Performant', color: 'blue' },
+    { value: 'Well-engineered', color: 'green' },
+    { value: 'Simple', color: 'orange' },
+    { value: 'Intuitive', color: 'teal' },
+    { value: 'Reactive', color: 'brown' },
+    { value: 'Awesome!', color: 'purple' }
+  ]
 </script>
 
 <SlideContainer>
   <div class="parent">
     <h1>What Svelte is (to me)</h1>
+
     <ul>
-      <li>Performant</li>
-      <li>Well-engineered</li>
-      <li>Simple</li>
-      <li>Intuitive</li>
-      <li>Awesome</li>
-      <li>...</li>
+      {#each items as { value, color }, i}
+        <li style="color: {color}">{value}</li>
+      {/each}
     </ul>
   </div>
 </SlideContainer>
@@ -32,7 +39,7 @@
 
   h1 {
     font-style: italic;
-    color: orangered;
+    color: darkorange;
     /* margin: auto; */
   }
 

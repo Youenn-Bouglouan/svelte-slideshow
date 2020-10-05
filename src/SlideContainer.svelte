@@ -32,7 +32,6 @@
   .container {
     margin: 5px;
     flex: 1 0 auto;
-    background-color: lightyellow;
     padding: 2px;
     display: flex;
     overflow-y: hidden;

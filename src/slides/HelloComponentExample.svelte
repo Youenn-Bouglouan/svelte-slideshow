@@ -9,13 +9,21 @@
   const title = `Full&nbsp;${highlightText('Hello!')}&nbsp;component`
 
   let codeSnippet1 = `// Greet.svelte file
+  
 <script>
   export let name = 'Stranger'
   $: hello = name ? \`Hello, \${name}!\` : 'Hello!'
 <\/script>
 
 <input class="inline" type="text" bind:value={name} />
-<h3 class="inline">{hello}</h3>`
+<h3 class="inline">{hello}</h3>
+
+< style>
+ h3 {
+    color: darkslategrey;
+    font-style: italic;
+ }
+</style>`
 </script>
 
 <SlideContainer>
