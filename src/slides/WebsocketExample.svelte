@@ -26,7 +26,7 @@
   let channelName = ''
 
   const myStore = websocketStore(
-    'ws://ws-eu.pusher.com:80/app/71f53e7f119c81086c96?client=js&protocol=5', //   'wss://echo.websocket.org',
+    'wss://ws-eu.pusher.com:443/app/71f53e7f119c81086c96?client=js&protocol=5', //   'wss://echo.websocket.org',
     {},
     []
   )

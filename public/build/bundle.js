@@ -51132,24 +51132,24 @@ Author: Pedro Oliveira <kanytu@gmail . com>
     			p = element("p");
     			t13 = text(/*fullResponse*/ ctx[2]);
     			attr_dev(h1, "class", "svelte-apdx3k");
-    			add_location(h1, file$p, 38, 4, 823);
-    			add_location(h30, file$p, 41, 6, 952);
+    			add_location(h1, file$p, 38, 4, 825);
+    			add_location(h30, file$p, 41, 6, 954);
     			attr_dev(a0, "href", "https://github.com/arlac77/svelte-websocket-store");
     			attr_dev(a0, "target", "_blank");
-    			add_location(a0, file$p, 40, 4, 868);
-    			add_location(h31, file$p, 45, 6, 1083);
+    			add_location(a0, file$p, 40, 4, 870);
+    			add_location(h31, file$p, 45, 6, 1085);
     			attr_dev(a1, "href", "https://pusher.com");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file$p, 44, 4, 1030);
+    			add_location(a1, file$p, 44, 4, 1032);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "placeholder", "Enter channel name here");
-    			add_location(input, file$p, 48, 4, 1155);
-    			add_location(button0, file$p, 52, 4, 1266);
-    			add_location(button1, file$p, 53, 4, 1330);
-    			add_location(h32, file$p, 54, 4, 1400);
-    			add_location(p, file$p, 55, 4, 1430);
+    			add_location(input, file$p, 48, 4, 1157);
+    			add_location(button0, file$p, 52, 4, 1268);
+    			add_location(button1, file$p, 53, 4, 1332);
+    			add_location(h32, file$p, 54, 4, 1402);
+    			add_location(p, file$p, 55, 4, 1432);
     			attr_dev(div, "class", "parent svelte-apdx3k");
-    			add_location(div, file$p, 37, 2, 797);
+    			add_location(div, file$p, 37, 2, 799);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, div, anchor);
@@ -51281,7 +51281,7 @@ Author: Pedro Oliveira <kanytu@gmail . com>
     	}
 
     	let channelName = "";
-    	const myStore = websocketStore("ws://ws-eu.pusher.com:80/app/71f53e7f119c81086c96?client=js&protocol=5", {}, []); //   'wss://echo.websocket.org',
+    	const myStore = websocketStore("wss://ws-eu.pusher.com:443/app/71f53e7f119c81086c96?client=js&protocol=5", {}, []); //   'wss://echo.websocket.org',
     	validate_store(myStore, "myStore");
     	component_subscribe($$self, myStore, value => $$invalidate(1, $myStore = value));
     	const writable_props = [];
