@@ -31,7 +31,6 @@
     <h1>
       {@html title}
     </h1>
-    <Greet name={'Unknown'} />
     <br />
     <Greet />
     <CodeSnippet code={codeSnippet1} />

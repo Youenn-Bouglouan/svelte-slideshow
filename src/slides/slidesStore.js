@@ -23,7 +23,6 @@ import WhereToGoFromHere from './WhereToGoFromHere.svelte'
 import WebSocketExample from './WebSocketExample.svelte'
 
 const slidesArray = [
-  { description: 'Websocket-Backed Store', slide: WebSocketExample },
   { description: 'Title', slide: Title },
   { description: 'Svelte Intro', slide: SvelteIntro },
   { description: 'What Svelte Is To Me?', slide: WhatSvelteIsToMe },
@@ -43,6 +42,7 @@ const slidesArray = [
   { description: 'But Why?', slide: ButWhy },
   { description: 'Animations & Transitions', slide: AnimationsTransitions },
   { description: 'State Management & Stores', slide: StateManagement },
+  { description: 'Websocket-Backed Store', slide: WebSocketExample },
   { description: 'The End!', slide: WhereToGoFromHere },
 ]
 

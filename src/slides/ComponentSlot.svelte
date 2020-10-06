@@ -29,6 +29,11 @@
     <CodeSnippet code={codeSnippet1} />
     <h3>Usage</h3>
     <CodeSnippet code={codeSnippet2} />
+
+    <a href="https://svelte.dev/tutorial/slots" target="_blank">
+      <h3>Check out the tutorial here</h3>
+    </a>
+
   </div>
 </SlideContainer>
 

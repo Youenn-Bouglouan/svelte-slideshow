@@ -10,13 +10,14 @@
 
   let codeSnippet1 = `<script>
   let name = 'Chuck'
+  let codeSnippet = '...'
 <\/script>
 
 <SlideContainer>
   <Greet name={'Unknown'} />
   <Greet />
   <Greet {name} />
-  <CodeSnippet code={codeSnippet1} />
+  <CodeSnippet code={codeSnippet} />
 </SlideContainer>`
 </script>
 
