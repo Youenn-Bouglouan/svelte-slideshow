@@ -1,4 +1,4 @@
-import { writable, derived, readable } from 'svelte/store'
+import { writable, derived } from 'svelte/store'
 
 const initialSlidesState = { current: 1, previous: 1 }
 

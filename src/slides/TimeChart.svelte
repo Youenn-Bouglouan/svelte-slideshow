@@ -32,7 +32,7 @@
 
 <SlideContainer>
   <div class="parent">
-    <p>I spent around 40h on that project</p>
+    <h3>I spent around 40h on that project</h3>
     <div class="chart">
       <Pie {data} options={{ maintainAspectRatio: false, responsive: true }} />
     </div>
@@ -55,7 +55,7 @@
     flex: 1 0 auto;
   }
 
-  p {
+  h3 {
     font-style: italic;
     color: darkolivegreen;
     text-align: center;

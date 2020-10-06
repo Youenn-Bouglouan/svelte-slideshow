@@ -1,5 +1,5 @@
 <script>
-  logMountAndDestroy('BenchmarkLOC.svelte')
+  logMountAndDestroy('BenchmarkSpeed.svelte')
 
   import { logMountAndDestroy } from '../utils.js'
   import SlideContainer from '../SlideContainer.svelte'
@@ -11,7 +11,7 @@
     <a
       href="https://www.doria.fi/bitstream/handle/10024/177433/levlin_mattias.pdf?sequence=2&isAllowed=y"
       target="_blank">
-      <p>See full comparison here</p>
+      <h3>See full comparison here</h3>
     </a>
   </div>
 </SlideContainer>

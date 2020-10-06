@@ -1,5 +1,5 @@
 <script>
-  logMountAndDestroy('Title.svelte')
+  logMountAndDestroy('PresMadeInSvelte.svelte')
 
   import { logMountAndDestroy } from '../utils.js'
   import SlideContainer from '../SlideContainer.svelte'
@@ -23,8 +23,9 @@
   }
 
   h1 {
-    color: blueviolet;
+    color: olive;
     margin: auto;
     font-size: 2.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
   }
 </style>

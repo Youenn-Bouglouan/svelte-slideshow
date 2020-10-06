@@ -16,7 +16,9 @@
     "svelte": "^3.0.0",
     "svelte-highlight": "^0.6.2",
     "svelte-chartjs": "^1.0.1",
-    "svelte-spa-router": "^2.2.0"
+    "svelte-spa-router": "^2.2.0",
+    "svelte-loading-spinners": "^0.1.1",
+    "svelte-websocket-store": "^1.1.0"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"

@@ -15,7 +15,7 @@
       class="bottom"
       href="https://www.youtube.com/watch?v=AdNJ3fydeao"
       target="_blank">
-      <p>Watch this talk from Rich Harris (the creator of Svelte)</p>
+      <h3>Watch this talk from Rich Harris (the creator of Svelte)</h3>
     </a>
   </div>
 </SlideContainer>

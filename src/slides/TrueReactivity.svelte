@@ -1,5 +1,5 @@
 <script>
-  logMountAndDestroy('Slide 1')
+  logMountAndDestroy('TrueReactivity.svelte')
 
   import { logMountAndDestroy } from '../utils.js'
   import SlideContainer from '../SlideContainer.svelte'

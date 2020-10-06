@@ -8,11 +8,11 @@
   let codeSnippet1 = `// MyComponent.svelte file
 <script>
   // My JS/TS logic goes here
-  let a = 2 + 2
+  let greetings = 'Hello, Stranger!'
 <\/script>
 
 <!-- My HTML goes here -->
-<h1>Hello!</h1>
+<h1>{greetings}</h1>
 <p>This is a paragraph...</p>
 
 < style>
