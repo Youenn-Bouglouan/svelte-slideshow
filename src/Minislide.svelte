@@ -12,74 +12,61 @@
   on:click={() => dispatch('minislideSelected', slideInfo)}>
   <div class="tooltip">
     {slideInfo.index}
-    <!-- <div class="top">
-      <div class="text-content">
-        <h3>{slideInfo.description}</h3>
-        <div class="miniature">
-          <svelte:component this={slideInfo.slide} />
-        </div>
-        <i />
-      </div>
-    </div> -->
+    <span class="tooltiptext">{slideInfo.description}</span>
   </div>
 </button>
 
 <style>
-  /* .tooltip {
+  /* Tooltip container */
+  .tooltip {
+    position: absolute;
     display: inline-block;
-    position: relative;
-    border-bottom: 1px dotted #666;
-    text-align: left;
   }
 
-  /* .tooltip h3 {
-    margin: 5px;
-    color: slategray;
-  }
-
-  .tooltip .top {
-    min-width: 200px;
-    max-width: 400px;
-    max-height: 160px;
-    top: -20px;
-    left: 50%;
-    transform: translate(-30%, -100%);
-    color: black;
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
     background-color: orange;
-    font-weight: normal;
-    font-size: 14px;
-    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 5px 0;
+    border-radius: 6px;
+    border-color: grey;
+    border-width: 3px;
+    border-style: solid;
+
+    /* Position the tooltip text */
     position: absolute;
-    z-index: 99999999;
-    box-sizing: border-box;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-    display: none;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
   }
 
-  .tooltip:hover .top {
-    display: block;
-  }
-
-  .tooltip .top i {
-    position: absolute;
-    top: 100%;
-    left: 30%;
-    margin-left: -15px;
-    width: 30px;
-    height: 15px;
-    overflow: hidden;
-  }
-
-  .tooltip .top i::after {
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
     content: '';
     position: absolute;
-    width: 15px;
-    height: 15px;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background-color: orange;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-  } */
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+  }
 
   .square {
     width: 34px;

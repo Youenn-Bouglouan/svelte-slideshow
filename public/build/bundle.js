@@ -51389,8 +51389,12 @@ Author: Pedro Oliveira <kanytu@gmail . com>
     function create_fragment$s(ctx) {
     	let button;
     	let div;
-    	let t_value = /*slideInfo*/ ctx[0].index + "";
-    	let t;
+    	let t0_value = /*slideInfo*/ ctx[0].index + "";
+    	let t0;
+    	let t1;
+    	let span;
+    	let t2_value = /*slideInfo*/ ctx[0].description + "";
+    	let t2;
     	let button_class_value;
     	let dispose;
 
@@ -51398,13 +51402,18 @@ Author: Pedro Oliveira <kanytu@gmail . com>
     		c: function create() {
     			button = element("button");
     			div = element("div");
-    			t = text(t_value);
-    			attr_dev(div, "class", "tooltip");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			span = element("span");
+    			t2 = text(t2_value);
+    			attr_dev(span, "class", "tooltiptext svelte-1qx5axp");
+    			add_location(span, file$q, 14, 4, 413);
+    			attr_dev(div, "class", "tooltip svelte-1qx5axp");
     			add_location(div, file$q, 12, 2, 363);
 
     			attr_dev(button, "class", button_class_value = "" + (null_to_empty(/*$currentSlideReadOnly*/ ctx[1] !== /*slideInfo*/ ctx[0].index
     			? "square"
-    			: "square selected") + " svelte-pk4nat"));
+    			: "square selected") + " svelte-1qx5axp"));
 
     			add_location(button, file$q, 9, 0, 206);
     		},
@@ -51414,16 +51423,20 @@ Author: Pedro Oliveira <kanytu@gmail . com>
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, button, anchor);
     			append_dev(button, div);
-    			append_dev(div, t);
+    			append_dev(div, t0);
+    			append_dev(div, t1);
+    			append_dev(div, span);
+    			append_dev(span, t2);
     			if (remount) dispose();
     			dispose = listen_dev(button, "click", /*click_handler*/ ctx[3], false, false, false);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*slideInfo*/ 1 && t_value !== (t_value = /*slideInfo*/ ctx[0].index + "")) set_data_dev(t, t_value);
+    			if (dirty & /*slideInfo*/ 1 && t0_value !== (t0_value = /*slideInfo*/ ctx[0].index + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*slideInfo*/ 1 && t2_value !== (t2_value = /*slideInfo*/ ctx[0].description + "")) set_data_dev(t2, t2_value);
 
     			if (dirty & /*$currentSlideReadOnly, slideInfo*/ 3 && button_class_value !== (button_class_value = "" + (null_to_empty(/*$currentSlideReadOnly*/ ctx[1] !== /*slideInfo*/ ctx[0].index
     			? "square"
-    			: "square selected") + " svelte-pk4nat"))) {
+    			: "square selected") + " svelte-1qx5axp"))) {
     				attr_dev(button, "class", button_class_value);
     			}
     		},
